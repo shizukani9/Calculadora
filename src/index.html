@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora Avanzada</h1>
+        <div class="input-section">
+            <input type="number" id="number1" placeholder="Número 1">
+            <input type="number" id="number2" placeholder="Número 2">
+        </div>
+        <div class="buttons">
+            <button data-operation="add">Suma</button>
+            <button data-operation="subtract">Resta</button>
+            <button data-operation="multiply">Multiplicación</button>
+            <button data-operation="divide">División</button>
+            <button data-operation="power">Potencia</button>
+            <button data-operation="sqrt">Raíz</button>
+        </div>
+        <p class="result">Resultado: <span id="result">0</span></p>
+        <h2>Historial</h2>
+        <ul id="history"></ul>
+    </div>
+    <script src="js/calculator.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/history.js" type="module"></script>
+</body>
+</html>
